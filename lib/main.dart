@@ -9,6 +9,27 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold(body: Center()));
+    return MaterialApp(
+      home: Scaffold(
+      appBar: NossaAppBar(), 
+      body: Center()),
+      
+    );
+  }
+}
+
+class NossaAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const NossaAppBar({super.key});
+
+  @override
+  Size get preferredSize => const Size.fromHeight(56);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      leading: Text('Lucas'),
+      title: const Text('Nossa AppBar'),
+      backgroundColor: Colors.green,
+    );
   }
 }
