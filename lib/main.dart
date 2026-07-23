@@ -4,6 +4,8 @@ void main() {
   runApp(const MainApp());
 }
 
+Color colorGreen = Color(0xff146C43);
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -125,7 +127,7 @@ class MainApp extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Icon(Icons.settings, size: 36, color: Color(0xff146C43)),
+                    Icon(Icons.settings, size: 36, color: colorGreen),
                     SizedBox(width: 25),
                     Text(
                       'Configurações',
@@ -152,7 +154,7 @@ class MainApp extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Colors.green.shade50,
                 ),
-                child: Icon(Icons.person, size: 32, color: Color(0xff146C43)),
+                child: Icon(Icons.person, size: 32, color: colorGreen),
               ),
               SizedBox(height: 12),
               Text(
@@ -178,20 +180,20 @@ class MainApp extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Icon(Icons.article, size: 24, color: Color(0xff146C43)),
-                        Text(
-                          'Posts',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey.shade600,
-                          ),
-                        ),
+                        Icon(Icons.article, size: 24, color: colorGreen),
                         SizedBox(height: 4),
                         Text(
                           '3',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'Posts',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey.shade600,
                           ),
                         ),
                       ],
@@ -208,20 +210,20 @@ class MainApp extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Icon(Icons.group, size: 24, color: Color(0xff146C43)),
-                        Text(
-                          'Seguidores',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey.shade600,
-                          ),
-                        ),
+                        Icon(Icons.group, size: 24, color: colorGreen),
                         SizedBox(height: 4),
                         Text(
                           '160',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'Seguidores',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey.shade600,
                           ),
                         ),
                       ],
@@ -243,13 +245,6 @@ class MainApp extends StatelessWidget {
                           size: 24,
                           color: Color(0xff146C43),
                         ),
-                        Text(
-                          'Seguindo',
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.grey.shade600,
-                          ),
-                        ),
                         SizedBox(height: 4),
                         Text(
                           '174',
@@ -258,10 +253,16 @@ class MainApp extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        Text(
+                          'Seguindo',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.grey.shade600,
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  SizedBox(width: 12),
                 ],
               ),
             ],
