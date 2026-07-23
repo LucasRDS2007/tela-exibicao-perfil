@@ -268,6 +268,17 @@ class MainApp extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: colorGreen,
+          unselectedItemColor: colorGreen,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: 'Configurações',
+            ),
+          ],
+        ),
       ),
     );
   }
